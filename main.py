@@ -3,6 +3,7 @@ import json
 
 BASE_URL = 'https://api.esportal.com/tournament/get?_=1579280233646&id={camp_id}'
 BASE_URL_TEAM = 'https://api.esportal.com/team/get?_=1579290242888&slug={slug_name}&users=1&activities=0'
+MATCH_URL = "https://api.esportal.com/tournament/match/get?_=1579293384440&match_id=1202083"
 tournaments = range(280, 330)
 
 
@@ -57,4 +58,3 @@ if __name__ == '__main__':
         # print(json.dumps(team_list[0], indent=4, sort_keys=True))
     link = make_team_request_url('santa-bronx-ufu-esports')
     request_team_members(link)
-
